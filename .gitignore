@@ -27,5 +27,3 @@ yarn-error.log*
 
 # Ignore ESLint files
 .eslintcache
-
-NavBar.css
