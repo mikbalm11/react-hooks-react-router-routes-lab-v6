@@ -10,7 +10,9 @@ function Actors() {
       .then(result => result.json())
       .then(data => setActors(data))
       .catch(error => console.error(error));
-  }, [])
+  }, []);
+
+  const actorCards = actors.map(actor => <Card key={actor.id} name={actor.name} movies={actor.movies} />);
 
   return (
     <>
@@ -19,7 +21,7 @@ function Actors() {
       </header>
       <main>
         <h1>Actors Page</h1>
-        {actors.map(actor => <Card key={actor.id} name={actor.name} movies={actor.movies} />)}
+        {actorCards}
       </main>
     </>
   );
