@@ -9,7 +9,7 @@ function Card({name, movies}) {
               {movieList}
           </ul>
       </article>
-    )
+    );
   }
   
   export default Card

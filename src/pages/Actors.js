@@ -10,7 +10,7 @@ function Actors() {
       .then(result => result.json())
       .then(data => setActors(data))
       .catch(error => console.error(error));
-  })
+  }, [])
 
   return (
     <>

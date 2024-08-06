@@ -10,7 +10,7 @@ function Home() {
     .then(result => result.json())
     .then(data => setMovies(data))
     .catch(error => console.error(error))
-  }, [])
+  }, []);
 
   return (
     <>
